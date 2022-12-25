@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FeedbackSection from './Section/Section';
-// import Feedback from '../components/FeedbackOptions/FeedbackOptions';
+import Feedback from '../components/FeedbackOptions/FeedbackOptions';
 import Statistic from '../components/Statistics/Statistics';
 import Notification from '../components/Statistics/Notification';
 import { Container } from './App.styled';
@@ -28,12 +28,12 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     return (
       <Container>
-        {/* <FeedbackSection title="Please leave feedback">
+        <FeedbackSection title="Please leave feedback">
           <Feedback
             options={Object.keys(this.state)}
             onFeedbackBtn={this.handleBtn}
           />
-        </FeedbackSection> */}
+        </FeedbackSection>
 
         <FeedbackSection title="Statistic">
           {!totalFeedback ? (
